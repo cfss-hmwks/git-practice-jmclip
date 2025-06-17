@@ -43,4 +43,7 @@ Here, we’re going to use tidyverse (which has ggplot2)
            shape="Cylinders", size="Horsepower", color = "Cylinders",
            caption = "Source: mtcars")
 
-![](a0_practice_files/figure-markdown_strict/plot-cars-1.png)
+![](a0_practice_files/figure-markdown_strict/plot-cars-1.png) \###
+Gapminder example
+
+data(gapminder)
