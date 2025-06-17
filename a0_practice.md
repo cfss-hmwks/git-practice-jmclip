@@ -8,8 +8,6 @@ When you click the **Knit** button a document will be generated that
 includes both content as well as the output of any embedded R code
 chunks within the document. You can embed an R code chunk like this:
 
-    summary(cars)
-
     ##      speed           dist       
     ##  Min.   : 4.0   Min.   :  2.00  
     ##  1st Qu.:12.0   1st Qu.: 26.00  
@@ -31,19 +29,6 @@ prevent printing of the R code that generated the plot.
 
 Here, we’re going to use tidyverse (which has ggplot2)
 
-    library(tidyverse)
-
-    ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-    ## ✔ dplyr     1.1.4     ✔ readr     2.1.5
-    ## ✔ forcats   1.0.0     ✔ stringr   1.5.1
-    ## ✔ ggplot2   3.5.2     ✔ tibble    3.2.1
-    ## ✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-    ## ✔ purrr     1.0.4     
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
-    ## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-
     ggplot(mtcars)+ 
            geom_point(aes(x = mpg, y = wt, 
                           color = factor(cyl),
@@ -51,7 +36,7 @@ Here, we’re going to use tidyverse (which has ggplot2)
                           size = hp))+ 
                           #label = rownames(mtcars), check_overlap = TRUE) +
       theme_bw() +
-      scale_color_manual(values = c("black", "gray", "blue") ) +
+      scale_color_manual(values = c("black", "gray", "#800000") ) +
       labs(title = "Car MPG vs weight", 
            x = 'Miles per gallon',
            y = 'Car weight',
