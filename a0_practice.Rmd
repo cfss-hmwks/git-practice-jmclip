@@ -55,11 +55,6 @@ ggplot(mtcars)+
        caption = "Source: mtcars")
 
 ```
-### Gapminder example
-
-```{r}
-data(gapminder)
-```
 
 ### BACK to MTCARS
 
@@ -84,4 +79,10 @@ ggplot(mtcars, aes( x =mpg, y = wt)) +
  theme_bw() +
   scale_color_manual(values = c("black", "gray", "blue") )
 
+```
+
+# Gapminder example
+
+```{r}
+data(gapminder)
 ```
